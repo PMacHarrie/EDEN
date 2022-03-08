@@ -1,0 +1,418 @@
+{
+ "namespace": "climcaps.avro",
+ "type": "record",
+ "name": "observation",
+ "fields": [
+{"name": "asc_flag", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "mean_anom_wrt_equat", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "sat_alt", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "sat_sol_azi", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "sat_sol_zen", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "scan_mid_time", "type": ["double", "null"], "defualt": "NaN"},
+{"name": "subsat_lat", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "subsat_lon", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "sun_glint_lat", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "sun_glint_lon", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "sat_att", "type": { "type":"array", "items":"float", "defualt": []}},
+{"name": "sat_pos", "type": { "type":"array", "items":"float", "defualt": []}},
+{"name": "sat_vel", "type": { "type":"array", "items":"float", "defualt": []}},
+{"name": "a0_cloud", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "aeff_1", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "aeff_end", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "air_pres_h2o_nsurf", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "air_pres_lay_nsurf", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "air_pres_nsurf", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "air_temp_dof", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "air_temp_func_last_indx", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "ampl_eta", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "bad_mw_ret", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "bad_phys_ret", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "bad_reg_ret", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "bt2", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "ch4_dof", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "ch4_func_last_indx", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "ch4_mmr_midtrop", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "ch4_mmr_midtrop_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "ch4_mmr_midtrop_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "chi2_ch4", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "chi2_co", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "chi2_co2", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "chi2_h2o", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "chi2_hno3", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "chi2_n2o", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "chi2_o3", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "chi2_so2", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "chi2_temp", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "cldfrc_500", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "cldfrc_tot", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "clim_co2_mmr", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "clim_surf_ir_wnum_cnt", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "co2_dof", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "co2_func_last_indx", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "co_dof", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "co_func_last_indx", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "co_mmr_midtrop", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "co_mmr_midtrop_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "co_mmr_midtrop_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "etarej", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "fg_surf_air_temp", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "fg_surf_temp", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "for_cld_frac_tot", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "for_cld_frac_tot_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "for_cld_frac_tot_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "for_cld_top_pres_tot", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "for_cld_top_pres_tot_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "for_cld_top_pres_tot_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "h2o_liq_tot", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "h2o_liq_tot_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "h2o_liq_tot_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "h2o_vap_dof", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "h2o_vap_func_last_indx", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "h2o_vap_tot", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "h2o_vap_tot_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "h2o_vap_tot_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "hno3_dof", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "hno3_func_last_indx", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "idprof", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "ir_x", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "ispare_2", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "land_frac", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "lat", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "lat_geoid", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "local_solar_time", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "lon", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "lon_geoid", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "mw_h2o_vap_tot", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "mw_h2o_vap_tot_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "mw_h2o_vap_tot_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "mw_surf_air_temp", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "mw_surf_air_temp_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "mw_surf_air_temp_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "mw_surf_class", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "mw_surf_spec_hum", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "mw_surf_spec_hum_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "mw_surf_spec_hum_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "mw_surf_temp", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "mw_surf_temp_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "mw_surf_temp_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "n2o_dof", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "nbest", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "ngood", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "o3_dof", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "o3_func_last_indx", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "o3_tot", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "o3_tot_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "o3_tot_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "obs_id", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "obs_time_tai93", "type": ["double", "null"], "defualt": "NaN"},
+{"name": "obs_time_utc", "type": { "type":"array", "items":"int", "defualt": []}},
+{"name": "pbest", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "pgood", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "prior_sea_lev_pres", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "prior_surf_pres", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "qualsurf", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "qualtemp", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "sat_azi", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "sat_range", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "sat_zen", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "so2_dof", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "softcode", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "sol_azi", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "sol_zen", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "sun_glint_dist", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_air_temp", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_air_temp_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_air_temp_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "surf_alt", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_alt_sdev", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_dew_point_temp", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_dew_point_temp_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "surf_gp_hgt", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_gp_hgt_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_gp_hgt_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "surf_h2o_vap_pres_deficit", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_h2o_vap_pres_deficit_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "surf_ir_wnum_cnt", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "surf_rel_hum", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_rel_hum_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_rel_hum_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "surf_spec_hum", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_spec_hum_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_spec_hum_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "surf_spec_hum_sat_ice", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_spec_hum_sat_ice_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_spec_hum_sat_ice_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "surf_spec_hum_sat_liq", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_spec_hum_sat_liq_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_spec_hum_sat_liq_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "surf_temp", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_temp_dof", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_temp_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_temp_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "totliqwat", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "tpause_gp_hgt", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "tpause_gp_hgt_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "tpause_pres", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "tpause_pres_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "tpause_temp", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "tpause_temp_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "view_ang", "type": ["float", "null"], "defualt": "NaN"},
+{ "name":"h2o_lay",
+	"type":{
+                "type": "array",  
+                "items":{
+                    "name":"h2o_row",
+                    "type":"record",
+                    "fields":[
+                        {"name":"air_pres_h2o", "type":["float","null"], "default" : "NaN"},
+{"name": "mw_spec_hum", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "mw_spec_hum_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "mw_spec_hum_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "rel_hum", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "rel_hum_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "rel_hum_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "spec_hum", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "spec_hum_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "spec_hum_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "spec_hum_sat_ice", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "spec_hum_sat_ice_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "spec_hum_sat_ice_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "spec_hum_sat_liq", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "spec_hum_sat_liq_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "spec_hum_sat_liq_qc", "type": ["string", "null"], "defualt": "NaN"}
+                    	]
+                	}
+	 	}
+ 	},
+{ "name":"air_pres_vars",
+	"type":{
+                "type": "array",  
+                "items":{
+                    "name":"apv_row",
+                    "type":"record",
+                    "fields":[
+{"name": "air_pres", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "air_temp", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "air_temp_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "air_temp_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "co2_vmr", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "co2_vmr_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "co2_vmr_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "fg_air_temp", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "gp_hgt", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "gp_hgt_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "gp_hgt_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "mw_air_temp", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "mw_air_temp_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "mw_air_temp_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "o3_mmr", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "o3_mmr_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "o3_mmr_qc", "type": ["string", "null"], "defualt": "NaN"}
+			]
+                	}
+	 	}
+ 	},
+{ "name":"air_pres_lay_vars",
+	"type":{
+                "type": "array",  
+                "items":{
+                    "name":"aplv_row",
+                    "type":"record",
+                    "fields":[
+{"name": "air_pres_lay", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "ch4_mol_lay", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "ch4_mol_lay_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "ch4_mol_lay_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "co_mol_lay", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "co_mol_lay_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "co_mol_lay_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "fg_h2o_vap_mol_lay", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "fg_o3_mol_lay", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "h2o_liq_mol_lay", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "h2o_liq_mol_lay_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "h2o_liq_mol_lay_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "h2o_vap_mol_lay", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "h2o_vap_mol_lay_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "h2o_vap_mol_lay_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "hno3_mol_lay", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "hno3_mol_lay_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "hno3_mol_lay_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "mw_cld_phase", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "mw_h2o_vap_mol_lay", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "mw_h2o_vap_mol_lay_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "n2o_mol_lay", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "n2o_mol_lay_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "n2o_mol_lay_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "o3_mol_lay", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "o3_mol_lay_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "o3_mol_lay_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "so2_mol_lay", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "so2_mol_lay_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "so2_mol_lay_qc", "type": ["string", "null"], "defualt": "NaN"}
+			]
+		}
+ 	}
+},
+{ "name":"cld_lay_vars",
+	"type":{
+                "type": "array",  
+                "items":{
+                    "name":"cl_row",
+                    "type":"record",
+                    "fields":[
+{"name": "cld_lay_lbl", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "for_cld_frac_2lay", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "for_cld_frac_2lay_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "for_cld_frac_2lay_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "for_cld_top_pres_2lay", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "for_cld_top_pres_2lay_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "for_cld_top_pres_2lay_qc", "type": ["string", "null"], "defualt": "NaN"}
+			]
+		}
+ 	}
+},
+{ "name":"fov_vars",
+	"type":{
+                "type": "array",  
+                "items":{
+                    "name":"fov_row",
+                    "type":"record",
+                    "fields":[
+{"name": "blue_spike_fire", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "c2h6_dbt", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "c3h6_dbt", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "c5h8_dbt", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "fov_land_frac", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "fov_lat", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "fov_lon", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "fov_obs_id", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "fov_surf_alt", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "fov_surf_alt_sdev", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "fov_weight", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "ir_precip_est_24hr", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "ir_precip_est_24hr_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "ir_precip_est_24hr_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "nh3_dbt", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "num_cld", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "num_cld_qc", "type": ["string", "null"], "defualt": "NaN"}
+			]
+		}
+ 	}
+},
+{ "name":"sfm_vars",
+	"type":{
+                "type": "array",  
+                "items":{
+                    "name":"sfm_row",
+                    "type":"record",
+                    "fields":[
+{"name": "mw_surf_mw_emis", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "mw_surf_mw_emis_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "mw_surf_mw_emis_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "surf_mw_emis", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_mw_emis_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_mw_emis_qc", "type": ["string", "null"], "defualt": "NaN"}
+			]
+		}
+ 	}
+},
+{ "name":"swi_vars",
+	"type":{
+                "type": "array",  
+                "items":{
+                    "name":"swi_row",
+                    "type":"record",
+                    "fields":[
+{"name": "clim_surf_ir_emis", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "clim_surf_ir_refl", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "clim_surf_ir_wnum", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_ir_emis", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_ir_emis_err", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_ir_emis_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "surf_ir_refl", "type": ["float", "null"], "defualt": "NaN"},
+{"name": "surf_ir_refl_qc", "type": ["string", "null"], "defualt": "NaN"},
+{"name": "surf_ir_wnum", "type": ["float", "null"], "defualt": "NaN"}
+			]
+		}
+ 	}
+},
+{
+		"name": "co2_ave_kern",
+		"type": ["null", {
+			"type": "array",
+			"items": ["null", {
+				"type": "array",
+				"items": ["null", "float"]
+			}]
+		}],
+		"default": null
+},
+{
+		"name": "co_ave_kern",
+		"type": ["null", {
+			"type": "array",
+			"items": ["null", {
+				"type": "array",
+				"items": ["null", "float"]
+			}]
+		}],
+		"default": null
+},
+{
+		"name": "fov_lat_bnds",
+		"type": ["null", {
+			"type": "array",
+			"items": ["null", {
+				"type": "array",
+				"items": ["null", "float"]
+			}]
+		}],
+		"default": null
+},
+{
+		"name": "fov_lon_bnds",
+		"type": ["null", {
+			"type": "array",
+			"items": ["null", {
+				"type": "array",
+				"items": ["null", "float"]
+			}]
+		}],
+		"default": null
+},
+{
+		"name": "hno3_ave_kern",
+		"type": ["null", {
+			"type": "array",
+			"items": ["null", {
+				"type": "array",
+				"items": ["null", "float"]
+			}]
+		}],
+		"default": null
+},
+{
+		"name": "o3_ave_kern",
+		"type": ["null", {
+			"type": "array",
+			"items": ["null", {
+				"type": "array",
+				"items": ["null", "float"]
+			}]
+		}],
+		"default": null
+},
+{
+		"name": "h2o_vap_ave_kern",
+		"type": ["null", {
+			"type": "array",
+			"items": ["null", {
+				"type": "array",
+				"items": ["null", "float"]
+			}]
+		}],
+		"default": null
+}
+ ]
+}
+

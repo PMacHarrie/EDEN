@@ -1,0 +1,10 @@
+{
+ "namespace": "test.avro",
+ "type": "record",
+ "name": "User",
+ "fields": [
+     {"name": "name", "type": "double"},
+     {"name": "favorite_number",  "type": ["int", "null"]},
+     {"name": "favorite_color", "type": ["double", "null"]}
+ ]
+}
