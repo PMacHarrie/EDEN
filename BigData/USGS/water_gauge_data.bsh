@@ -1,0 +1,2 @@
+curl -OL "https://nwis.waterdata.usgs.gov/usa/nwis/uv/?cb_00060=on&cb_00065=on&cb_63680=on&format=rdb&site_no=01589025&period=&begin_date=2000-09-13&end_date=2021-09-20"
+curl -OL "https://nwis.waterdata.usgs.gov/usa/nwis/uv/?cb_00060=on&cb_00065=on&cb_63680=on&format=rdb&site_no=01589000&period=&begin_date=2000-09-13&end_date=2021-09-20"
